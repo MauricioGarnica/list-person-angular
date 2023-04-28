@@ -1,0 +1,29 @@
+<form class="row">
+  <div class="form-group col-md-2">
+    <label for="txtName" class="form-label">Name:</label>
+    <input
+      type="text"
+      name="txtName"
+      id="txtName"
+      placeholder="Name"
+      class="form-control"
+      #txtNameRef
+    />
+  </div>
+  <div class="form-group col-md-2">
+    <label for="txtLastname" class="form-label">Lastname:</label>
+    <input
+      type="text"
+      name="txtLastname"
+      id="txtLastname"
+      placeholder="Lastname"
+      class="form-control"
+      #txtLastnameRef
+    />
+  </div>
+  <div class="col pt-3 mt-3">
+    <button type="submit" class="btn btn-primary" (click)="addPerson()">
+      Add
+    </button>
+  </div>
+</form>
